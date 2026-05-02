@@ -1,8 +1,0 @@
-<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1280 720'>
-  <rect width='1280' height='720' fill='#10161f'/>
-  <rect x='18' y='18' width='1244' height='684' fill='none' stroke='#d6b886' stroke-dasharray='10 10'/>
-  <circle cx='640' cy='360' r='72' fill='none' stroke='#e9eef3' stroke-width='5'/>
-  <polygon points='620,325 620,395 680,360' fill='#e9eef3'/>
-  <text x='50%' y='74%' fill='#e9eef3' font-size='42' text-anchor='middle' font-family='Arial'>VIDEO PLACEHOLDER</text>
-  <text x='50%' y='82%' fill='#b4bfcb' font-size='22' text-anchor='middle' font-family='Arial'>Use as poster image until final footage is added</text>
-</svg>
