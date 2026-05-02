@@ -1,0 +1,6 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'>
+  <rect width='1600' height='900' fill='#0f161f'/>
+  <rect x='24' y='24' width='1552' height='852' fill='none' stroke='#d6b886' stroke-dasharray='10 10'/>
+  <text x='50%' y='48%' fill='#e9eef3' font-size='54' text-anchor='middle' font-family='Arial'>HERO IMAGE PLACEHOLDER</text>
+  <text x='50%' y='58%' fill='#b4bfcb' font-size='26' text-anchor='middle' font-family='Arial'>Suggested ratio: 16:9 (1600x900+)</text>
+</svg>
