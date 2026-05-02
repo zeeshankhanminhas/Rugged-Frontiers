@@ -1,0 +1,135 @@
+:root {
+  --bg: #0d1117;
+  --bg-soft: #141b24;
+  --text: #e8edf2;
+  --muted: #b6c2cf;
+  --accent: #b08a4a;
+  --accent-soft: #d2b27a;
+  --line: #273446;
+  --max: 1160px;
+  --radius: 14px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "Inter", "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(180deg, #0b0f14 0%, #0f151d 45%, #101821 100%);
+  color: var(--text);
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container { width: min(92%, var(--max)); margin: 0 auto; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+  background: rgba(10, 13, 17, 0.78);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 72px;
+}
+.brand { font-weight: 600; letter-spacing: 0.04em; }
+.brand span { color: var(--accent-soft); }
+.nav-links { display: flex; gap: 1.25rem; align-items: center; }
+.nav-links a { color: var(--muted); font-size: 0.94rem; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+
+.btn {
+  display: inline-block;
+  padding: 0.78rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  transition: 0.25s ease;
+  font-weight: 500;
+}
+.btn-primary {
+  background: linear-gradient(145deg, var(--accent-soft), var(--accent));
+  color: #101317;
+  border-color: transparent;
+}
+.btn-primary:hover { transform: translateY(-1px); }
+.btn-outline:hover { border-color: var(--accent-soft); color: var(--accent-soft); }
+
+.hero {
+  min-height: 84vh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 25%, rgba(176,138,74,.18), transparent 45%),
+              radial-gradient(circle at 75% 70%, rgba(255,255,255,.06), transparent 35%);
+}
+.hero-content { position: relative; max-width: 760px; text-align: center; }
+.kicker { letter-spacing: .16em; text-transform: uppercase; color: var(--accent-soft); font-size: .75rem; }
+h1, h2, h3 { line-height: 1.2; margin: 0 0 1rem; }
+h1 { font-size: clamp(2rem, 5vw, 4rem); }
+h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); }
+.lead { color: var(--muted); font-size: 1.08rem; }
+.cta-row { display: flex; gap: .9rem; justify-content: center; flex-wrap: wrap; margin-top: 1.4rem; }
+
+.section { padding: 5rem 0; }
+.section-alt { background: rgba(10, 14, 18, 0.7); border-top: 1px solid rgba(255,255,255,0.06); border-bottom: 1px solid rgba(255,255,255,0.06); }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem; }
+.card {
+  background: linear-gradient(180deg, rgba(21,29,39,.95), rgba(15,20,27,.95));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+}
+.card p { color: var(--muted); margin-top: .5rem; }
+.card small { color: var(--accent-soft); text-transform: uppercase; letter-spacing: .1em; }
+
+.quote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1rem;
+  color: #dde4ec;
+  font-size: 1.12rem;
+}
+
+.form-wrap {
+  max-width: 760px;
+  margin: 0 auto;
+  background: rgba(14,20,27,.9);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+label { display: block; font-size: .9rem; margin: .85rem 0 .35rem; color: var(--muted); }
+input, textarea, select {
+  width: 100%;
+  padding: .8rem .9rem;
+  border-radius: 10px;
+  border: 1px solid #304156;
+  background: #10161e;
+  color: var(--text);
+}
+textarea { min-height: 130px; resize: vertical; }
+.notice { color: var(--muted); font-size: .88rem; }
+
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,.08);
+  padding: 2rem 0;
+  color: var(--muted);
+  font-size: .92rem;
+}
+
+@media (max-width: 920px) {
+  .grid-3 { grid-template-columns: 1fr; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .nav { flex-wrap: wrap; padding: .5rem 0 1rem; }
+}
