@@ -15,3 +15,11 @@ A premium, minimal front-end concept website built with HTML5, CSS3, and vanilla
 ## Run locally
 
 Open `index.html` directly or serve with a simple static server.
+
+## Placeholder assets
+
+- `assets/logo/logo-placeholder.svg`
+- `assets/images/hero-image-placeholder.svg`
+- `assets/images/video-placeholder.svg`
+
+Replace these with final media while keeping same paths (or update references in HTML).
